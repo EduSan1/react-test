@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './pages/home';
 import reportWebVitals from './reportWebVitals';
+import Router from './routes';
+import Menu from './components/menu';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="background">
+      <div className='main-container'>
+        <Menu/>
+        <Router />
+      </div>
+    </div>
   </React.StrictMode>
 );
 
